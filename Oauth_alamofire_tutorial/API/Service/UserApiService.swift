@@ -19,7 +19,6 @@ enum UserApiService {
         
         
         let storedTokenData = UserDefaultsManager.shared.getTokens()
-        
 
         let credential = OAuthCredential(accessToken: storedTokenData.accessToken,
                                          refreshToken: storedTokenData.refreshToken,

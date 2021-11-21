@@ -16,6 +16,8 @@ struct OAuthCredential : AuthenticationCredential {
     
     let expiration: Date
     
-    var requiresRefresh: Bool { Date(timeIntervalSinceNow: 30) > expiration }
+    // Require refresh if within 5 minutes of expiration
+    var requiresRefresh: Bool { Date(timeIntervalSinceNow: 60 * 5) > expiration }
     
 }
+

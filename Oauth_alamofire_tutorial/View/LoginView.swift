@@ -23,7 +23,17 @@ struct LoginView : View {
         VStack{
             Form{
                 Section(header: Text("로그인 정보"), content: {
-                    TextField("이메일", text: $emailInput).keyboardType(.emailAddress).autocapitalization(.none)
+                    
+                    TextField("", text: $emailInput).keyboardType(.emailAddress).autocapitalization(.none)
+                        .placeholder(shouldShow: emailInput.isEmpty,
+                                     placerholderText: {
+                            Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                                .foregroundColor(.gray)
+//                            Text("이메일을 입력해주세요!")
+//                                .font(.system(size: 20))
+//                                .foregroundColor(.green)
+                        })
+                        
                     SecureField("비밀번호", text: $passwordInput).keyboardType(.default)
                 })
                 Section {
@@ -47,6 +57,9 @@ struct LoginView : View {
         }.navigationTitle("로그인 하기")
     }
 }
+
+
+
 
 #if DEBUG
 struct LoginView_Previews: PreviewProvider {
