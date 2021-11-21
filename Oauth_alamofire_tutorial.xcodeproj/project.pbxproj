@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F204354F274A82D40017374F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204354E274A82D40017374F /* View+Ext.swift */; };
 		F2B5D752272D756400F15D40 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F2B5D751272D756400F15D40 /* Alamofire */; };
 		F2B5D754272D762400F15D40 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5D753272D762400F15D40 /* BaseInterceptor.swift */; };
 		F2B5D756272D776A00F15D40 /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5D755272D776A00F15D40 /* ApiLogger.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F204354E274A82D40017374F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		F2B5D753272D762400F15D40 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
 		F2B5D755272D776A00F15D40 /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
 		F2B5D757272D78D700F15D40 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F204354D274A82BE0017374F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F204354E274A82D40017374F /* View+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F2B5D759272D7D4900F15D40 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +149,7 @@
 				F2E36581272D576000B6A720 /* Model */,
 				F2E3657A272D546700B6A720 /* View */,
 				F2B5D760272D805F00F15D40 /* ViewModel */,
+				F204354D274A82BE0017374F /* Extension */,
 				F2E36570272D530500B6A720 /* Assets.xcassets */,
 				F2E36572272D530500B6A720 /* Preview Content */,
 			);
@@ -292,6 +303,7 @@
 				F2E3658F272D60D700B6A720 /* ApiClient.swift in Sources */,
 				F2E3657C272D547400B6A720 /* LoginView.swift in Sources */,
 				F2B5D770272D8C8200F15D40 /* OAuthAuthenticator.swift in Sources */,
+				F204354F274A82D40017374F /* View+Ext.swift in Sources */,
 				F2E36588272D5D0200B6A720 /* UserListView.swift in Sources */,
 				F2E3657E272D560400B6A720 /* RegisterView.swift in Sources */,
 				F2B5D754272D762400F15D40 /* BaseInterceptor.swift in Sources */,
