@@ -18,6 +18,22 @@ final class ApiLogger: EventMonitor {
     
     // Event called whenever a DataRequest has parsed a response.
     func request<Value>(_ request: DataRequest, didParseResponse response: DataResponse<Value, AFError>) {
+        print("ApiLogger - request() called")
+        
+        if let error = response.error {
+            switch error {
+            case let .sessionTaskFailed(error):
+                print("ApiLogger 에러 - error: ", error)
+                if error._code == NSURLErrorTimedOut {
+                    print("[API 타임아웃] Time out occurs!!!!!")
+                    NotificationCenter.default.post(name: .requestTimeout, object: nil)
+                }
+            default:
+                print("default")
+            }
+        }
+        
+        
         debugPrint("ApiLogger - Finished: \(response)")
     }
 }

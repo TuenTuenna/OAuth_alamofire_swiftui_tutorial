@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F204354F274A82D40017374F /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204354E274A82D40017374F /* View+Ext.swift */; };
+		F23EDB972756742B00F9A4EE /* TestApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EDB962756742B00F9A4EE /* TestApiRouter.swift */; };
+		F23EDB992756749300F9A4EE /* TestApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EDB982756749300F9A4EE /* TestApiService.swift */; };
+		F23EDB9B2756783700F9A4EE /* TestApiVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EDB9A2756783700F9A4EE /* TestApiVM.swift */; };
+		F23EDB9D27567A2D00F9A4EE /* Notification.Name+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23EDB9C27567A2D00F9A4EE /* Notification.Name+Ext.swift */; };
 		F2B5D752272D756400F15D40 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F2B5D751272D756400F15D40 /* Alamofire */; };
 		F2B5D754272D762400F15D40 /* BaseInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5D753272D762400F15D40 /* BaseInterceptor.swift */; };
 		F2B5D756272D776A00F15D40 /* ApiLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5D755272D776A00F15D40 /* ApiLogger.swift */; };
@@ -39,6 +43,10 @@
 
 /* Begin PBXFileReference section */
 		F204354E274A82D40017374F /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		F23EDB962756742B00F9A4EE /* TestApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiRouter.swift; sourceTree = "<group>"; };
+		F23EDB982756749300F9A4EE /* TestApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiService.swift; sourceTree = "<group>"; };
+		F23EDB9A2756783700F9A4EE /* TestApiVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApiVM.swift; sourceTree = "<group>"; };
+		F23EDB9C27567A2D00F9A4EE /* Notification.Name+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Ext.swift"; sourceTree = "<group>"; };
 		F2B5D753272D762400F15D40 /* BaseInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInterceptor.swift; sourceTree = "<group>"; };
 		F2B5D755272D776A00F15D40 /* ApiLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLogger.swift; sourceTree = "<group>"; };
 		F2B5D757272D78D700F15D40 /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F204354E274A82D40017374F /* View+Ext.swift */,
+				F23EDB9C27567A2D00F9A4EE /* Notification.Name+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 			children = (
 				F2B5D75A272D7D5400F15D40 /* AuthApiService.swift */,
 				F2B5D768272D8A3B00F15D40 /* UserApiService.swift */,
+				F23EDB982756749300F9A4EE /* TestApiService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -102,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B5D761272D807000F15D40 /* UserVM.swift */,
+				F23EDB9A2756783700F9A4EE /* TestApiVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 			children = (
 				F2B5D757272D78D700F15D40 /* AuthRouter.swift */,
 				F2B5D766272D897500F15D40 /* UserRouter.swift */,
+				F23EDB962756742B00F9A4EE /* TestApiRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -297,11 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B5D769272D8A3B00F15D40 /* UserApiService.swift in Sources */,
+				F23EDB992756749300F9A4EE /* TestApiService.swift in Sources */,
 				F2E36586272D5C2800B6A720 /* OtherUserProfileView.swift in Sources */,
 				F2E36583272D576C00B6A720 /* UserData.swift in Sources */,
 				F2B5D774272D941600F15D40 /* UserListResponse.swift in Sources */,
 				F2E3658F272D60D700B6A720 /* ApiClient.swift in Sources */,
+				F23EDB9D27567A2D00F9A4EE /* Notification.Name+Ext.swift in Sources */,
 				F2E3657C272D547400B6A720 /* LoginView.swift in Sources */,
+				F23EDB9B2756783700F9A4EE /* TestApiVM.swift in Sources */,
 				F2B5D770272D8C8200F15D40 /* OAuthAuthenticator.swift in Sources */,
 				F204354F274A82D40017374F /* View+Ext.swift in Sources */,
 				F2E36588272D5D0200B6A720 /* UserListView.swift in Sources */,
@@ -315,6 +330,7 @@
 				F2B5D75D272D7E5900F15D40 /* TokenData.swift in Sources */,
 				F2B5D76E272D8BC200F15D40 /* OAuthCredential.swift in Sources */,
 				F2B5D767272D897500F15D40 /* UserRouter.swift in Sources */,
+				F23EDB972756742B00F9A4EE /* TestApiRouter.swift in Sources */,
 				F2B5D758272D78D700F15D40 /* AuthRouter.swift in Sources */,
 				F2B5D75F272D7F1400F15D40 /* AuthResponse.swift in Sources */,
 				F2B5D76B272D8AF100F15D40 /* UserInfoResponse.swift in Sources */,
